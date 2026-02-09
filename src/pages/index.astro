@@ -1,11 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import '../styles/global.css'; // <--- AGREGA ESTA LÍNEA
+const title = "Desarrollo Web Profesional";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{title}</title>
+	</head>
+	<body class="bg-slate-950 text-white font-sans">
+		<main class="max-w-4xl mx-auto px-6 py-24 text-center">
+			<h1 class="text-6xl font-extrabold tracking-tighter mb-4 bg-gradient-to-r from-violet-400 to-blue-500 bg-clip-text text-transparent">
+				Creamos el futuro de tu negocio.
+			</h1>
+			<p class="text-xl text-slate-400 mb-8">
+				Aplicaciones escalables y sitios web de alto impacto.
+			</p>
+			<div class="flex justify-center gap-4">
+				<a href="#" class="bg-violet-600 hover:bg-violet-700 px-8 py-3 rounded-full font-bold transition">
+					Ver Proyectos
+				</a>
+				<a href="#" class="border border-slate-700 hover:bg-slate-900 px-8 py-3 rounded-full font-bold transition">
+					Contacto
+				</a>
+			</div>
+		</main>
+	</body>
+</html>
